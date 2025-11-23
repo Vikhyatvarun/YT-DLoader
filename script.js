@@ -20,17 +20,17 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 function downloadExe() {
-  const url = 'setup/YT-DLoader-setup.exe';           // file in same folder
-  const fileName = 'YT-DLoader-setup.exe';
+  const url = 'https://vikhyatvarun.github.io/YT-DLoader/setup/YT-DLoader-setup.exe';
 
   const a = document.createElement('a');
   a.href = url;
-  a.download = fileName;
+  a.download = 'YT-DLoader-setup.exe';
   document.body.appendChild(a);
   a.click();
-  document.body.removeChild(a);
-
+  a.remove();
 }
+
+
 
 
 
