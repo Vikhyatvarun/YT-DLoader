@@ -1,0 +1,58 @@
+
+/* Custom styles that can't be done with Tailwind */
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #b2c7e7 0%, #e5d4d4 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Main content container */
+main {
+    min-height: calc(100vh - 128px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section spacing */
+section {
+    margin-bottom: 2rem !important;
+}
+/* Custom button styles */
+.btn-primary {
+    @apply bg-primary hover:bg-indigo-600 text-white font-medium py-2 px-6 rounded-lg transition-all;
+    box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.3), 0 2px 4px -1px rgba(59, 130, 246, 0.2);
+}
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3), 0 4px 6px -2px rgba(79, 70, 229, 0.2);
+    background-color: #4f46e5;
+}
+.btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 text-white font-medium py-2 px-6 rounded-lg transition-colors;
+}
+
+/* Custom animation for download buttons */
+.download-btn {
+    transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2.5rem;
+    }
+}
+flex items-center justify-between bg-gray-100 hover:bg- rounded-lg p-4 transition-colors cursor-pointer
+
